@@ -21,8 +21,6 @@ interface IProduct {
   id:string;
 }
 
-
-
 export default function ProductPage({ product }: { product: IProduct }) {
   const router = useRouter();
   const [addedToCart, setAddedToCart] = useState(false);
@@ -61,7 +59,7 @@ export default function ProductPage({ product }: { product: IProduct }) {
         src={urlForImage(product.image).url()}
         alt={product.title}
       /> 
- 
+
       {!addedToCart && <button onClick={handleAddToCart}>Add to Cart</button>}
     </div>
   );
