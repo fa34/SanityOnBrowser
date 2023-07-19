@@ -58,7 +58,7 @@ export default function ProductPage({ product }: { product: IProduct }) {
         height={200}
         src={urlForImage(product.image).url()}
         alt={product.title}
-      />
+      /> 
 
       {!addedToCart && <button onClick={handleAddToCart}>Add to Cart</button>}
     </div>
